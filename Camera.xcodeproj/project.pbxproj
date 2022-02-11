@@ -11,6 +11,10 @@
 		1DFC3E2A27B39AA100991E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC3E2927B39AA100991E6E /* ContentView.swift */; };
 		1DFC3E2C27B39AA200991E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC3E2B27B39AA200991E6E /* Assets.xcassets */; };
 		1DFC3E2F27B39AA200991E6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC3E2E27B39AA200991E6E /* Preview Assets.xcassets */; };
+		1DFC3E3727B39BFE00991E6E /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC3E3627B39BFE00991E6E /* FrameView.swift */; };
+		1DFC3E3A27B39F5900991E6E /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC3E3927B39F5900991E6E /* CameraManager.swift */; };
+		1DFC3E3C27B65F8E00991E6E /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC3E3B27B65F8E00991E6E /* FrameManager.swift */; };
+		1DFC3E4027B6640300991E6E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC3E3F27B6640300991E6E /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		1DFC3E2B27B39AA200991E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DFC3E2E27B39AA200991E6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DFC3E3027B39AA200991E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFC3E3627B39BFE00991E6E /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		1DFC3E3927B39F5900991E6E /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		1DFC3E3B27B65F8E00991E6E /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		1DFC3E3F27B6640300991E6E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1DFC3E2727B39AA100991E6E /* CameraApp.swift */,
-				1DFC3E2927B39AA100991E6E /* ContentView.swift */,
+				1DFC3E3E27B6631A00991E6E /* ViewModels */,
+				1DFC3E3827B39F2D00991E6E /* Camera */,
 				1DFC3E2B27B39AA200991E6E /* Assets.xcassets */,
 				1DFC3E3027B39AA200991E6E /* Info.plist */,
 				1DFC3E2D27B39AA200991E6E /* Preview Content */,
@@ -67,6 +76,25 @@
 				1DFC3E2E27B39AA200991E6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DFC3E3827B39F2D00991E6E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1DFC3E3B27B65F8E00991E6E /* FrameManager.swift */,
+				1DFC3E3927B39F5900991E6E /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		1DFC3E3E27B6631A00991E6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1DFC3E3F27B6640300991E6E /* ContentViewModel.swift */,
+				1DFC3E2927B39AA100991E6E /* ContentView.swift */,
+				1DFC3E3627B39BFE00991E6E /* FrameView.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFC3E3C27B65F8E00991E6E /* FrameManager.swift in Sources */,
+				1DFC3E3727B39BFE00991E6E /* FrameView.swift in Sources */,
+				1DFC3E4027B6640300991E6E /* ContentViewModel.swift in Sources */,
 				1DFC3E2A27B39AA100991E6E /* ContentView.swift in Sources */,
+				1DFC3E3A27B39F5900991E6E /* CameraManager.swift in Sources */,
 				1DFC3E2827B39AA100991E6E /* CameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
